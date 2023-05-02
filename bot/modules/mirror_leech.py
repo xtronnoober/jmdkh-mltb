@@ -10,7 +10,7 @@ from pyrogram.handlers import MessageHandler
 
 from bot import IS_PREMIUM_USER, LOGGER, bot, categories_dict, config_dict
 from bot.helper.ext_utils.bot_utils import (get_content_type, is_gdrive_link,
-                                            is_magnet, is_mega_link,
+                                            is_magnet,
                                             is_rclone_path, is_url, new_task,
                                             sync_to_async)
 from bot.helper.ext_utils.exceptions import DirectDownloadLinkException
@@ -20,7 +20,7 @@ from bot.helper.listeners.tasks_listener import MirrorLeechListener
 from bot.helper.mirror_utils.download_utils.aria2_download import add_aria2c_download
 from bot.helper.mirror_utils.download_utils.direct_link_generator import direct_link_generator
 from bot.helper.mirror_utils.download_utils.gd_download import add_gd_download
-from bot.helper.mirror_utils.download_utils.mega_download import add_mega_download
+
 from bot.helper.mirror_utils.download_utils.qbit_download import add_qb_torrent
 from bot.helper.mirror_utils.download_utils.rclone_download import add_rclone_download
 from bot.helper.mirror_utils.download_utils.telegram_download import TelegramDownloadHelper
